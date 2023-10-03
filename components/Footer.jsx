@@ -1,0 +1,118 @@
+import React from "react";
+import Image from "next/image";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+
+const Footer = () => {
+  const scrollTo = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      window.scrollTo({
+        behavior: "smooth",
+        top: element.offsetTop,
+      });
+    }
+  };
+
+  const styles = {
+    container: {
+      flex: 1,
+      height: "20vh",
+    },
+    title: {
+      "background-image":
+        "linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)",
+    },
+    hr: {
+      "margin-top": "10px",
+      color: "gray",
+      opacity: 0.4,
+    },
+  };
+  return (
+    <div style={styles.container} className="mx-20 px-5">
+      <hr style={styles.hr} />
+      <div className="flex flex-row justify-between">
+        <div className="flex flex-col justify-around p-5">
+          <h1 className="text-3xl font-semibold cursor-pointer hover:text-[#FFA84B]">
+            NOBLE.
+          </h1>
+          <p className="mt-10 text-[#FFA84B]">
+            &copy; Designed by Shamsad Alam
+          </p>
+        </div>
+        <div className="p-5 flex flex-col justify-around">
+          <div>
+            <ul className="flex gap-20">
+              <li
+                className="text-gray-300 text-base cursor-pointer hover:text-[#FF5E69]"
+                onClick={() => scrollTo("home")}
+              >
+                Home
+              </li>
+              <li
+                className="text-gray-300 text-base cursor-pointer hover:text-[#FF5E69]"
+                onClick={() => scrollTo("about")}
+              >
+                About
+              </li>
+              <li
+                className="text-gray-300 text-base cursor-pointer hover:text-[#FF5E69]"
+                onClick={() => scrollTo("contact-me")}
+              >
+                Contact
+              </li>
+            </ul>
+          </div>
+          <div className="flex gap-10 justify-end">
+            <div className="text-gray-300">
+              <a
+                href="https://www.linkedin.com/in/shamsadalam7084/"
+                target="_sham"
+              >
+                <LinkedInIcon
+                  className="cursor-pointer hover:text-[#FFA84B]"
+                  fontSize="large"
+                />
+              </a>
+            </div>
+            <div className="text-gray-300">
+              <a href="https://github.com/ShamsadAlam" target="_sham">
+                <GitHubIcon
+                  className="cursor-pointer hover:text-[#FFA84B]"
+                  fontSize="large"
+                />
+              </a>
+            </div>
+            <div className="text-gray-300">
+              <a
+                href="https://www.instagram.com/mr._shamsad_alam/"
+                target="_sham"
+              >
+                <InstagramIcon
+                  className="cursor-pointer hover:text-[#FFA84B]"
+                  fontSize="large"
+                />
+              </a>
+            </div>
+            <div className="text-gray-300">
+              <a
+                href="https://www.instagram.com/mr._shamsad_alam/"
+                target="_sham"
+              >
+                <FacebookIcon
+                  className="cursor-pointer hover:text-[#FFA84B] hover:animate-shake"
+                  fontSize="large"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;
