@@ -14,17 +14,15 @@ const Contact = () => {
 
   const notify = () => toast("Message Sent !!");
 
-  // Function to send the email using Email.js
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // Configure the Email.js service and template IDs and your user ID
     const emailServiceId = "service_tjlpfbd";
     const emailTemplateId = "template_jj0etwv";
     const userId = "QSHBe0kbxByZuVEe-";
 
     console.log(emailServiceId, emailTemplateId, userId);
-    // Create a template parameters object with the form data
+
     const templateParams = {
       FullName: name,
       Email: email,
@@ -32,7 +30,6 @@ const Contact = () => {
       message: Message,
     };
 
-    // Send the email
     emailjs.send(emailServiceId, emailTemplateId, templateParams, userId).then(
       (result) => {
         console.log("Email sent successfully!", result.text);
@@ -44,11 +41,6 @@ const Contact = () => {
   };
 
   const styles = {
-    container: {
-      flex: 1,
-      height: "100%",
-      marginTop: "15vh",
-    },
     title: {
       backgroundImage:
         "linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)",
@@ -66,23 +58,26 @@ const Contact = () => {
   return (
     <div
       id="contact-me"
-      style={styles.container}
-      className="flex m-20 px-5 mb-10"
+      className="m-4 sm:m-8 lg:m-12 flex flex-col justify-between sm:flex-row lg:flex-row border"
     >
-      <div style={styles.title} className="text-5xl w-1/2 flex flex-col gap-10">
-        <h1 className="font-semibold px-5 mt-5">Contact Me.</h1>
-        <p className="text-gray-300 text-base px-5">
-          Looking to hire a dedicated and skilled professional? Look no further!
-          With a passion for excellence and a proven track record, I am the
-          perfect candidate for your team. My expertise, commitment, and
-          adaptability make me an ideal fit for your organization's success.
+      <div style={styles.title} className="m-4 sm:m-8 lg:m-12">
+        <h1 className="text-2xl sm:text-lg lg:text-3xl font-semibold sm:px-5 lg:px-5">
+          Contact Me.
+        </h1>
+        <p className="text-gray-300 text-base p-5">
+          Looking to hire a dedicated and skilled professional? <br /> Look no
+          further! With a passion for excellence and a proven track record,{" "}
+          <br /> I am the perfect candidate for your team. My expertise,
+          commitment, and <br />
+          adaptability make me an ideal fit for your organization's success.{" "}
+          <br />
           Let's collaborate for mutual growth.
         </p>
-        <div className="text-sm px-5 font-base">
-          <div className="flex">
+        <div className="text-base sm:text-lg lg:text-xl px-5 font-base">
+          <div className="">
             <MailIcon className="text-gray-300" />
             <a
-              className="mx-3 text-lg text-[#FFA84B] opacity-80 cursor-pointer hover:opacity-100"
+              className="mx-3 text-[#FFA84B] opacity-80 cursor-pointer hover:opacity-100"
               href="mailto:nobleperson.dev@gmail.com"
             >
               nobleperson.dev@gmail.com
@@ -90,33 +85,23 @@ const Contact = () => {
           </div>
           <div className="flex mt-2">
             <PhoneIcon className="text-gray-300" />
-            <p className="mx-3 text-lg text-[#FFA84B] cursor-pointer hover:opacity-100 opacity-80">
+            <p className="mx-3 text-[#FFA84B] opacity-80 cursor-pointer hover:opacity-100">
               +91 7571062202
             </p>
           </div>
           <div className="flex mt-2">
             <HomeIcon className="text-gray-300" />
-            <p className="mx-3 text-lg text-[#FFA84B] opacity-80 cursor-pointer hover:opacity-100">
+            <p className="mx-3 text-[#FFA84B] opacity-80 cursor-pointer hover:opacity-100">
               {" "}
               Kushinagar UP, India-274402
             </p>
           </div>
-          <div className="shadow-lg shadow-gray-800 border w-fit mt-5 rounded-md overflow-hidden">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14251.97075686637!2d83.9038037973133!3d26.744609390248822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3993eb4321c21665%3A0x64d79606f3bc3c54!2sKasia%20Bazaar%2C%20Uttar%20Pradesh%20274402!5e0!3m2!1sen!2sin!4v1696353560375!5m2!1sen!2sin"
-              width="600"
-              height="500"
-              allowfullscreen="true"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
         </div>
       </div>
-      <div className="w-1/2">
+      <div className="m-4 sm:m-8 lg:m-12 lg:w-1/2 text-sm sm:text-lg lg:text-lg">
         <form onSubmit={sendEmail}>
           <div className="flex flex-col p-2">
-            <h2 className="font-semibold">Your Name</h2>
+            <h2>Your Name</h2>
             <input
               type="text"
               name="name"
@@ -127,7 +112,7 @@ const Contact = () => {
             />
           </div>
           <div className="flex flex-col p-2">
-            <h2 className="font-semibold">Your Email</h2>
+            <h2>Your Email</h2>
             <input
               type="email"
               name="email"
@@ -138,7 +123,7 @@ const Contact = () => {
             />
           </div>
           <div className="flex flex-col p-2">
-            <h2 className="font-semibold">Your Phone No.</h2>
+            <h2>Your Phone No.</h2>
             <input
               type="text"
               name="phoneNo"
@@ -149,7 +134,7 @@ const Contact = () => {
             />
           </div>
           <div className="flex flex-col p-2">
-            <h2 className="font-semibold">Message</h2>
+            <h2>Message</h2>
             <textarea
               name="Message"
               placeholder="Write your message to Shamsad Alam"

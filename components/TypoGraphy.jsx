@@ -17,7 +17,7 @@ const TypoGraphy = () => {
         "Open-Source Contributor @ Hecktober Fest",
         1000,
       ]}
-      speed={50}
+      speed={40}
       repeat={Infinity}
     />
   );

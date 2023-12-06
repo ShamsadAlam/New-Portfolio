@@ -22,10 +22,6 @@ import Ios from "../public/SVGIcons/ios.svg";
 
 const Skills = () => {
   const styles = {
-    container: {
-      flex: 1,
-      height: "100%",
-    },
     title: {
       "background-image":
         "linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)",
@@ -37,21 +33,24 @@ const Skills = () => {
     },
   };
   return (
-    <div id="skills" style={styles.container} className="flex flex-col">
-      <div style={styles.title} className="text-5xl">
+    <div
+      id="skills"
+      className="grid place-items-center m-4 sm:m-8 lg:m-12 text-2xl sm:text-lg lg:text-3xl border"
+    >
+      <div style={styles.title}>
         <h1 className="font-semibold px-5 mx-20">Skills.</h1>
       </div>
-      <div className="grid grid-cols-6 mt-5 mx-20">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:gird-cols-5 lg:grid-cols-6">
         <div className="pt-3 bg-[#1C1C22] overflow-hidden border border-gray-200 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-800 hover:scale-105 ease-in-out duration-1000">
           <Image src={Html} height={80} width={80} alt="html" />
           <div className="w-full bg-[#1C1C22] p-3 text-center">
-            <h2 className="text-xl">Html5</h2>
+            <h2 className="text-sm sm:text-lg lg:text-xl">Html5</h2>
           </div>
         </div>
         <div className="pt-3 bg-[#1C1C22] overflow-hidden border border-gray-200 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-800 hover:scale-105 ease-in-out duration-1000">
           <Image src={Css} height={80} width={80} alt="css" />
           <div className="w-full bg-[#1C1C22] p-3 text-center">
-            <h2 className="text-xl">CSS3</h2>
+            <h2 className="text-sm sm:text-lg lg:text-xl">CSS3</h2>
           </div>
         </div>
         <div className="pt-3 bg-[#1C1C22] overflow-hidden border border-gray-200 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-800 hover:scale-105 ease-in-out duration-1000">
@@ -63,19 +62,19 @@ const Skills = () => {
             className="mt-2"
           />
           <div className="w-full bg-[#1C1C22] p-3 text-center">
-            <h2 className="text-xl">JavaScript</h2>
+            <h2 className="text-sm sm:text-lg lg:text-xl">JavaScript</h2>
           </div>
         </div>
         <div className="pt-3 bg-[#1C1C22] overflow-hidden border border-gray-200 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-800 hover:scale-105 ease-in-out duration-1000">
           <Image src={Typescript} height={80} width={80} alt="typescript" />
           <div className="w-full bg-[#1C1C22] p-3 text-center">
-            <h2 className="text-xl">TypeScript</h2>
+            <h2 className="text-sm sm:text-lg lg:text-xl">TypeScript</h2>
           </div>
         </div>
         <div className="pt-3 bg-[#1C1C22] overflow-hidden border border-gray-200 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-800 hover:scale-105 ease-in-out duration-1000">
           <Image src={REACT} height={80} width={80} alt="React" />
           <div className="w-full bg-[#1C1C22] p-3 text-center">
-            <h2 className="text-xl">React.js</h2>
+            <h2 className="text-sm sm:text-lg lg:text-xl">React.js</h2>
           </div>
         </div>
         <div className="pt-3 bg-[#1C1C22] overflow-hidden border border-gray-200 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-800 hover:scale-105 ease-in-out duration-1000">
@@ -87,37 +86,37 @@ const Skills = () => {
             className="mt-2"
           />
           <div className="w-full bg-[#1C1C22] p-3 text-center">
-            <h2 className="text-xl">Next.js</h2>
+            <h2 className="text-sm sm:text-lg lg:text-xl">Next.js</h2>
           </div>
         </div>
         <div className="pt-3 bg-[#1C1C22] overflow-hidden border border-gray-200 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-800 hover:scale-105 ease-in-out duration-1000">
           <Image src={Tailwind} height={80} width={80} alt="TailwindCSS" />
           <div className="w-full bg-[#1C1C22] p-3 text-center">
-            <h2 className="text-xl">Tailwind CSS</h2>
+            <h2 className="text-sm sm:text-lg lg:text-xl">Tailwind CSS</h2>
           </div>
         </div>
         <div className="pt-3 bg-[#1C1C22] overflow-hidden border border-gray-200 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-800 hover:scale-105 ease-in-out duration-1000">
           <Image src={MaterialUI} height={80} width={80} alt="Material-UI" />
           <div className="w-full bg-[#1C1C22] p-3 text-center">
-            <h2 className="text-xl">Material UI</h2>
+            <h2 className="text-sm sm:text-lg lg:text-xl">Material UI</h2>
           </div>
         </div>
         <div className="pt-3 bg-[#1C1C22] overflow-hidden border border-gray-200 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-800 hover:scale-105 ease-in-out duration-1000">
           <Image src={Node} height={80} width={80} alt="Node.js" />
           <div className="w-full bg-[#1C1C22] p-3 text-center">
-            <h2 className="text-xl">Node.js</h2>
+            <h2 className="text-sm sm:text-lg lg:text-xl">Node.js</h2>
           </div>
         </div>
         <div className="pt-3 bg-[#1C1C22] overflow-hidden border border-gray-200 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-800 hover:scale-105 ease-in-out duration-1000">
           <Image src={Express} height={80} width={80} alt="Express" />
           <div className="w-full bg-[#1C1C22] p-3 text-center">
-            <h2 className="text-xl">Express.js</h2>
+            <h2 className="text-sm sm:text-lg lg:text-xl">Express.js</h2>
           </div>
         </div>
         <div className="pt-3 bg-[#1C1C22] overflow-hidden border border-gray-200 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-800 hover:scale-105 ease-in-out duration-1000">
           <Image src={Nest} height={80} width={80} alt="Nest.js" />
           <div className="w-full bg-[#1C1C22] p-3 text-center">
-            <h2 className="text-xl">Nest.js</h2>
+            <h2 className="text-sm sm:text-lg lg:text-xl">Nest.js</h2>
           </div>
         </div>
         <div className="pt-3 bg-[#1C1C22] overflow-hidden border border-gray-200 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-800 hover:scale-105 ease-in-out duration-1000">
@@ -129,19 +128,19 @@ const Skills = () => {
             className="mt-2"
           />
           <div className="w-full bg-[#1C1C22] p-3 text-center">
-            <h2 className="text-xl">MongoDB</h2>
+            <h2 className="text-sm sm:text-lg lg:text-xl">MongoDB</h2>
           </div>
         </div>
         <div className="pt-3 bg-[#1C1C22] overflow-hidden border border-gray-200 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-800 hover:scale-105 ease-in-out duration-1000">
           <Image src={SQL} height={80} width={80} alt="SQL" className="mt-2" />
           <div className="w-full bg-[#1C1C22] p-3 text-center">
-            <h2 className="text-xl">SQL</h2>
+            <h2 className="text-sm sm:text-lg lg:text-xl">SQL</h2>
           </div>
         </div>
         <div className="pt-3 bg-[#1C1C22] overflow-hidden border border-gray-200 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-800 hover:scale-105 ease-in-out duration-1000">
           <Image src={MySQL} height={80} width={80} alt="MySQL" />
           <div className="w-full bg-[#1C1C22] p-3 text-center">
-            <h2 className="text-xl">MySQL</h2>
+            <h2 className="text-sm sm:text-lg lg:text-xl">MySQL</h2>
           </div>
         </div>
         <div className="pt-3 bg-[#1C1C22] overflow-hidden border border-gray-200 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-800 hover:scale-105 ease-in-out duration-1000">
@@ -159,25 +158,25 @@ const Skills = () => {
             className="mt-2"
           />
           <div className="w-full bg-[#1C1C22] p-3 text-center">
-            <h2 className="text-xl">Github</h2>
+            <h2 className="text-sm sm:text-lg lg:text-xl">Github</h2>
           </div>
         </div>
         <div className="pt-3 bg-[#1C1C22] overflow-hidden border border-gray-200 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-800 hover:scale-105 ease-in-out duration-1000">
           <Image src={Reactnative} height={80} width={80} alt="React-Native" />
           <div className="w-full bg-[#1C1C22] p-3 text-center">
-            <h2 className="text-xl">React Native</h2>
+            <h2 className="text-sm sm:text-lg lg:text-xl">React Native</h2>
           </div>
         </div>
         <div className="pt-3 bg-[#1C1C22] overflow-hidden border border-gray-200 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-800 hover:scale-105 ease-in-out duration-1000">
           <Image src={Android} height={80} width={80} alt="Android" />
           <div className="w-full bg-[#1C1C22] p-3 text-center">
-            <h2 className="text-xl">Android</h2>
+            <h2 className="text-sm sm:text-lg lg:text-xl">Android</h2>
           </div>
         </div>
         <div className="pt-3 bg-[#1C1C22] border border-gray-200 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-800 hover:scale-105 ease-in-out duration-1000">
           <Image src={Ios} height={80} width={80} alt="iOS" />
           <div className="w-full  p-3 text-center">
-            <h2 className="text-xl">iOS</h2>
+            <h2 className="text-sm sm:text-lg lg:text-xl">iOS</h2>
           </div>
         </div>
       </div>

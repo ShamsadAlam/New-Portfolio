@@ -1,14 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import Logo from "../public/Images/noble.png";
+import Logo from "../public/Images/noble-2.png";
 import TypoGraphy from "./TypoGraphy";
 
 const Home = () => {
   const styles = {
-    container: {
-      flex: 1,
-      height: "100vh",
-    },
     title: {
       "background-image":
         "linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)",
@@ -21,42 +17,37 @@ const Home = () => {
   return (
     <div
       id="home"
-      style={styles.container}
-      className=" flex flex-col justify-center items-center"
+      className="flex flex-col sm:flex-row lg:flex-row border gap-8 m-4 sm:m-8 lg:mx-12 border h-screen"
     >
-      <div className="flex">
-        <Image src={Logo} width={200} height={200} alt="image" />
+      <div className="lg:w-1/2 flex justify-center items-center">
+        <Image src={Logo} width={500} height={500} alt="image" />
       </div>
+      <div className="lg:w-1/2 flex flex-col justify-center items-center gap-6">
+        <h1
+          style={styles.title}
+          className="font-semibold text-2xl sm:text-lg lg:text-5xl"
+        >
+          Hello, <br /> I'm Shamsad Alam
+        </h1>
 
-      <div
-        style={styles.title}
-        className="text-5xl flex flex-col justify-center items-center py-5 w-8/12"
-      >
-        <h1 className="font-semibold">Hello, I'm Shamsad Alam</h1>
-        <br />
-        <div className="text-gray-300 -mt-10">
+        <div className="text-gray-300 text-basic sm:text-lg lg:text-3xl">
           <TypoGraphy />
         </div>
-      </div>
-      <p className="text-gray-300 w-5/12 text-center">
-        A Full Stack Web Development Using MERN Stack Technology. I specialize
-        in React Native cross-platform Application Development (Android & iOS),
-        and Responsive Designs.
-      </p>
-      <div className="flex w-3/12 justify-around mt-5">
-        <a href="https://www.linkedin.com/in/shamsadalam7084/" target="_sham">
-          <button className="border p-3 rounded-3xl bg-white text-black text-sm hover:bg-[#FF5E69] hover:text-white px-10 hover:border-none">
-            HIRE ME
-          </button>
-        </a>
-        <a
-          href="https://drive.google.com/file/d/1w-WnVM2kVqJK9VQVKNnrZSb56zKBDdZp/view"
-          target="_sham"
-        >
-          <button className="border p-3 rounded-3xl text-white text-sm hover:bg-[#FF5E69] hover:text-white px-10 hover:border-none">
-            RESUME
-          </button>
-        </a>
+        <div className="text-sm sm:text-lg lg:text-xl flex flex-col justify-between gap-6 sm:flex-row lg:flex-row">
+          <a href="https://www.linkedin.com/in/shamsadalam7084/" target="_sham">
+            <button className="border p-3 rounded-3xl bg-white text-black hover:bg-[#FF5E69] hover:text-white px-10 hover:border-none">
+              HIRE ME
+            </button>
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1w-WnVM2kVqJK9VQVKNnrZSb56zKBDdZp/view"
+            target="_sham"
+          >
+            <button className="border p-3 rounded-3xl text-white hover:bg-[#FF5E69] hover:text-white px-10 hover:border-none">
+              RESUME
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   );

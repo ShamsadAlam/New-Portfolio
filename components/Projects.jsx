@@ -15,10 +15,6 @@ import LanguageSharpIcon from "@mui/icons-material/LanguageSharp";
 
 const Projects = () => {
   const styles = {
-    container: {
-      flex: 1,
-      height: "100%",
-    },
     title: {
       "background-image":
         "linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)",
@@ -33,7 +29,10 @@ const Projects = () => {
     },
   };
   return (
-    <div id="projects" style={styles.container} className=" flex flex-col">
+    <div
+      id="projects"
+      className="grid place-items-center m-4 sm:m-8 lg:m-12 border"
+    >
       <div style={styles.title} className="text-5xl mx-20">
         <h1 className="font-semibold px-5">
           <p className="text-white">Look At My</p>
@@ -42,7 +41,7 @@ const Projects = () => {
       </div>
       <div
         style={styles.card}
-        className="flex flex-row m-5 mx-20 justify-around"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 m-5 mx-20 justify-around"
       >
         <div className="border border-gray-200 border-opacity-20 relative rounded-xl w-96 shadow-lg shadow-gray-800 hover:scale-105 ease-in-out duration-1000">
           <div className="h-4/6 rounded-t-xl flex justify-center items-center px-3">
@@ -117,7 +116,7 @@ const Projects = () => {
       </div>
       <div
         style={styles.card}
-        className="flex flex-row m-5 mx-20 justify-around"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
       >
         <div className="border border-gray-200 border-opacity-20 relative rounded-xl w-96 shadow-lg shadow-gray-800 hover:scale-105 ease-in-out duration-1000">
           <div className="h-4/6 rounded-t-xl flex justify-center items-center px-3">

@@ -2,10 +2,6 @@ import React from "react";
 
 const About = () => {
   const styles = {
-    container: {
-      flex: 1,
-      height: "100vh",
-    },
     title: {
       "background-image":
         "linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)",
@@ -13,7 +9,6 @@ const About = () => {
       "-webkit-background-clip": "text",
       color: "transparent",
       "text-fill-color": "transparent",
-      "margin-top": "25vh",
     },
     hr: {
       "margin-top": "10px",
@@ -24,13 +19,15 @@ const About = () => {
   return (
     <div
       id="about"
-      style={styles.container}
-      className=" flex flex-row justify-between"
+      className="border flex flex-col justify-between sm:flex-row lg:flex-row text-base sm:text-lg lg:text-xl m-4 sm:m-8 lg:m-12 border h-screen"
     >
-      <div style={styles.title} className="text-5xl mx-20">
-        <h1 className="font-semibold px-5">Education</h1>
+      {/* EDUCATION */}
+      <div style={styles.title} className=" m-4 sm:m-8 lg:m-12">
+        <h1 className="text-2xl sm:text-lg lg:text-3xl font-semibold grid place-items-center sm:px-5 lg:px-5">
+          Education
+        </h1>
         <div className="p-5 hover:-translate-y-2 ease-in-out duration-500">
-          <h2 className="text-white text-xl cursor-pointer">
+          <h2 className="text-base sm:text-lg lg:text-xl text-white cursor-pointer">
             <a href="https://mjpru.ac.in/index.aspx">
               Mahatma Jyotiba Phule Rohilkhand University (MJPRU) Bareilly, UP
               India
@@ -38,9 +35,9 @@ const About = () => {
           </h2>
           <div className="flex flex-row justify-between">
             <p className="text-gray-300 text-sm">
-              Bachelor of Technology (B.Tech) in
+              Bachelor of Technology (B.Tech)
               <br />
-              Computer Science and Information Technology Engineering
+              Computer Science and IT Engineering
             </p>
             <p className="text-gray-300 text-sm">2020 - 2024</p>
             <hr className="absolute bottom-0 left-0" />
@@ -48,36 +45,40 @@ const About = () => {
           <hr style={styles.hr} />
         </div>
         <div className="p-5 hover:-translate-y-2 ease-in-out duration-500">
-          <h2 className="text-white text-xl">
+          <h2 className="text-white text-base sm:text-lg lg:text-xl">
             <a href="https://www.mavmkasia.co.in/">
               Maharshi Arvind Vidya Mandir Kasia Kushinagar, UP India
             </a>
           </h2>
           <div className="flex flex-row justify-between">
             <p className="text-gray-300 text-sm">
-              Intermediate (XII) in Mathematics
+              Intermediate (XII) Mathematics
             </p>
             <p className="text-gray-300 text-sm">2017 - 2019</p>
           </div>
           <hr style={styles.hr} />
         </div>
         <div className="p-5 hover:-translate-y-2 ease-in-out duration-500">
-          <h2 className="text-white text-xl cursor-pointer">
+          <h2 className="text-white text-base sm:text-lg lg:text-xl cursor-pointer">
             <a href="https://www.mavmkasia.co.in/">
               Maharshi Arvind Vidya Mandir Kasia Kushinagar, UP India
             </a>
           </h2>
           <div className="flex flex-row justify-between">
-            <p className="text-gray-300 text-sm">HighSchool (X) in Science</p>
+            <p className="text-gray-300 text-sm">HighSchool (X) Science</p>
             <p className="text-gray-300 text-sm">2015 - 2017</p>
           </div>
           <hr style={styles.hr} />
         </div>
       </div>
-      <div style={styles.title} className="text-5xl mx-20">
-        <h1 className="font-semibold px-5">Work Experience</h1>
+
+      {/* WORK EXPERIENCE */}
+      <div style={styles.title} className="m-4 sm:m-8 lg:m-12">
+        <h1 className="text-2xl sm:text-lg lg:text-3xl font-semibold grid place-items-center sm:px-5 lg:px-5">
+          Work Experience
+        </h1>
         <div className="p-5 hover:-translate-y-2 ease-in-out duration-500">
-          <h2 className="text-white text-xl cursor-pointer">
+          <h2 className="text-white text-base sm:text-lg lg:text-xl cursor-pointer">
             <a href="https://www.builtvisor.com/" target="_shamsad">
               BuiltVisor Pvt. Ltd.
             </a>
