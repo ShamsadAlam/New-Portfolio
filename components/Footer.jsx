@@ -28,7 +28,7 @@ const Footer = () => {
     },
   };
   return (
-    <div className="text-base sm:text-lg lg:text-xl m-4 sm:m-8 lg:m-12 border">
+    <div className="text-base sm:text-lg lg:text-xl m-4 sm:m-8 lg:m-12">
       <hr style={styles.hr} />
       <div className="flex flex-row justify-between flex flex-col justify-between sm:flex-row lg:flex-row ">
         <div className="flex flex-col justify-around p-5">

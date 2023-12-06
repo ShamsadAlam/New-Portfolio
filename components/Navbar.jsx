@@ -9,6 +9,17 @@ function Navbar() {
   const [selectedItem, setSelectedItem] = useState("");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const styles = {
+    title: {
+      "background-image":
+        "linear-gradient(to right, #B16CEA, #FF5E69, #FF8A56, #FFA84B)",
+      "background-clip": "text",
+      "-webkit-background-clip": "text",
+      color: "transparent",
+      "text-fill-color": "transparent",
+    },
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -53,19 +64,19 @@ function Navbar() {
       }`}
     >
       {/* Mobile Menu Button */}
-      <div className="md:hidden" onClick={toggleMobileMenu}>
+      <div className="md:hidden m-4" onClick={toggleMobileMenu}>
         {isMobileMenuOpen ? (
-          <div className="text-xl cursor-pointer font-extralight">X</div>
+          <div className="text-3xl cursor-pointer font-extralight"> X </div>
         ) : (
           <Image src={Hamburger} height={30} width={30} alt="hamburger" />
         )}
       </div>
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-14 right-0 bg-gray-900 w-64 h-screen p-4">
-          <ul className="flex flex-col gap-4">
+        <div className="md:hidden absolute mt-14 flex flex-col justify-between h-screen bg-gray-900 w-screen p-4">
+          <ul className="flex flex-col gap-6 justify-center items-center">
             <li
-              className={`cursor-pointer ${
+              className={`cursor-pointer text-xl ${
                 selectedItem === "home" ? "text-[#FF5E69] font-semibold" : ""
               }`}
               onClick={() => {
@@ -76,7 +87,7 @@ function Navbar() {
               Home
             </li>
             <li
-              className={`cursor-pointer ${
+              className={`cursor-pointer text-xl ${
                 selectedItem === "about" ? "text-[#FF5E69] font-semibold" : ""
               }`}
               onClick={() => {
@@ -87,7 +98,7 @@ function Navbar() {
               About
             </li>
             <li
-              className={`cursor-pointer ${
+              className={`cursor-pointer text-xl ${
                 selectedItem === "projects"
                   ? "text-[#FF5E69] font-semibold"
                   : ""
@@ -100,7 +111,7 @@ function Navbar() {
               Projects
             </li>
             <li
-              className={`cursor-pointer ${
+              className={`cursor-pointer text-xl ${
                 selectedItem === "skills" ? "text-[#FF5E69] font-semibold" : ""
               }`}
               onClick={() => {
@@ -111,7 +122,7 @@ function Navbar() {
               Skills
             </li>
             <li
-              className={`cursor-pointer ${
+              className={`cursor-pointer text-xl ${
                 selectedItem === "contact-me"
                   ? "text-[#FF5E69] font-semibold"
                   : ""
@@ -124,6 +135,12 @@ function Navbar() {
               Contact Me
             </li>
           </ul>
+          <h2
+            style={styles.title}
+            className="mb-16 text-3xl text-center font-semibold"
+          >
+            NOBLE.
+          </h2>
         </div>
       )}
 
