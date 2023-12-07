@@ -100,9 +100,12 @@ const Contact = () => {
             </div>
             <div className="flex mt-2">
               <PhoneIcon className="text-gray-300" />
-              <p className="mx-3 text-[#FFA84B] opacity-80 cursor-pointer hover:opacity-100">
+              <a
+                className="mx-3 text-[#FFA84B] opacity-80 cursor-pointer hover:opacity-100"
+                href="tel:+917571062202"
+              >
                 +91 7571062202
-              </p>
+              </a>
             </div>
             <div className="flex mt-2">
               <HomeIcon className="text-gray-300" />

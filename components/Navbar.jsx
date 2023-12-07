@@ -201,9 +201,11 @@ function Navbar() {
         </li>
       </ul>
       <ul className="mr-16 flex h-14 gap-10 items-center rounded-xl cursor-pointer">
-        <li className="flex text-black bg-white rounded-3xl p-2 items-center text-xs font-semibold hover:bg-[#FF5E69] hover:text-white">
-          <Link href="/">LET'S TALK</Link>
-        </li>
+        <a href="tel:+917571062202">
+          <li className="flex text-black bg-white rounded-3xl p-2 items-center text-xs font-semibold hover:bg-[#FF5E69] hover:text-white">
+            <p>LET'S TALK</p>
+          </li>
+        </a>
       </ul>
     </div>
   );
