@@ -73,22 +73,14 @@ const Projects = () => {
                   target="_sham"
                   className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
                 >
-                  <span className="hidden md:block">Github Link</span>
-                  <GitHubIcon
-                    className="block md:hidden cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
-                    fontSize="large"
-                  />
+                  Github Link
                 </a>
                 <a
                   href=""
                   target="_sham"
                   className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
                 >
-                  <span className="hidden md:block">Live Link</span>
-                  <LanguageIcon
-                    className="block md:hidden cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
-                    fontSize="large"
-                  />
+                  Live Link
                 </a>
               </div>
             </div>
@@ -111,22 +103,14 @@ const Projects = () => {
                   target="_sham"
                   className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
                 >
-                  <span className="hidden md:block">Github Link</span>
-                  <GitHubIcon
-                    className="block md:hidden cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
-                    fontSize="large"
-                  />
+                  Github Link
                 </a>
                 <a
                   href="https://real-estate-shamsad.vercel.app/"
                   target="_sham"
                   className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
                 >
-                  <span className="hidden md:block">Live Link</span>
-                  <LanguageIcon
-                    className="block md:hidden cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
-                    fontSize="large"
-                  />
+                  Live Link
                 </a>
               </div>
             </div>
@@ -147,22 +131,14 @@ const Projects = () => {
                   target="_sham"
                   className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
                 >
-                  <span className="hidden md:block">Github Link</span>
-                  <GitHubIcon
-                    className="block md:hidden cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
-                    fontSize="large"
-                  />
+                  Github Link
                 </a>
                 <a
                   href="https://nft-marketplace-shamsad.vercel.app/"
                   target="_sham"
                   className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
                 >
-                  <span className="hidden md:block">Live Link</span>
-                  <LanguageIcon
-                    className="block md:hidden cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
-                    fontSize="large"
-                  />
+                  Live Link
                 </a>
               </div>
             </div>
@@ -185,22 +161,14 @@ const Projects = () => {
                   target="_sham"
                   className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
                 >
-                  <span className="hidden md:block">Github Link</span>
-                  <GitHubIcon
-                    className="block md:hidden cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
-                    fontSize="large"
-                  />
+                  Github Link
                 </a>
                 <a
                   href="https://signal-clone-7571.web.app/"
                   target="_sham"
                   className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
                 >
-                  <span className="hidden md:block">Live Link</span>
-                  <LanguageIcon
-                    className="block md:hidden cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
-                    fontSize="large"
-                  />
+                  Live Link
                 </a>
               </div>
             </div>
@@ -223,22 +191,14 @@ const Projects = () => {
                   target="_sham"
                   className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
                 >
-                  <span className="hidden md:block">Github Link</span>
-                  <GitHubIcon
-                    className="block md:hidden cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
-                    fontSize="large"
-                  />
+                  Github Link
                 </a>
                 <a
                   href="https://netflix-clone-shamsadalam.vercel.app/"
                   target="_sham"
                   className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
                 >
-                  <span className="hidden md:block">Live Link</span>
-                  <LanguageIcon
-                    className="block md:hidden cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
-                    fontSize="large"
-                  />
+                  Live Link
                 </a>
               </div>
             </div>
@@ -259,22 +219,14 @@ const Projects = () => {
                   target="_sham"
                   className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
                 >
-                  <span className="hidden md:block">Github Link</span>
-                  <GitHubIcon
-                    className="block md:hidden cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
-                    fontSize="large"
-                  />
+                  Github Link
                 </a>
                 <a
                   href="https://restaurent-app-one.vercel.app/"
                   target="_sham"
                   className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
                 >
-                  <span className="hidden md:block">Live Link</span>
-                  <LanguageIcon
-                    className="block md:hidden cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
-                    fontSize="large"
-                  />
+                  Live Link
                 </a>
               </div>
             </div>
@@ -295,22 +247,14 @@ const Projects = () => {
                   target="_sham"
                   className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
                 >
-                  <span className="hidden md:block">Github Link</span>
-                  <GitHubIcon
-                    className="block md:hidden cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
-                    fontSize="large"
-                  />
+                  Github Link
                 </a>
                 <a
                   href="https://noble-keep.vercel.app/"
                   target="_sham"
                   className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
                 >
-                  <span className="hidden md:block">Live Link</span>
-                  <LanguageIcon
-                    className="block md:hidden cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
-                    fontSize="large"
-                  />
+                  Live Link
                 </a>
               </div>
             </div>

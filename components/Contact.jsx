@@ -3,8 +3,6 @@ import MailIcon from "@mui/icons-material/Mail";
 import PhoneIcon from "@mui/icons-material/Phone";
 import HomeIcon from "@mui/icons-material/Home";
 import emailjs from "emailjs-com";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 
@@ -13,8 +11,6 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [phoneNo, setPhoneNo] = useState("");
   const [Message, setMessage] = useState("");
-
-  const notify = () => toast("Message Sent !!");
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -35,6 +31,7 @@ const Contact = () => {
     emailjs.send(emailServiceId, emailTemplateId, templateParams, userId).then(
       (result) => {
         console.log("Email sent successfully!", result.text);
+        alert("message sent successfully!! 😊");
       },
       (error) => {
         console.error("Email could not be sent:", error.text);
@@ -168,11 +165,9 @@ const Contact = () => {
                 style={styles.button}
                 className="w-fit p-3 m-3 px-5 text-sm rounded-3xl "
                 type="submit"
-                onClick={notify}
               >
                 SUBMIT NOW
               </button>
-              <ToastContainer />
             </div>
           </form>
         </div>
