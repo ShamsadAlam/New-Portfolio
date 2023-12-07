@@ -84,9 +84,9 @@ const Contact = () => {
             further! With a passion for excellence and a proven track record,{" "}
             <br /> I am the perfect candidate for your team. My expertise,
             commitment, and <br />
-            adaptability make me an ideal fit for your organization's success.{" "}
-            <br />
-            Let's collaborate for mutual growth.
+            adaptability make me an ideal fit for your organization&apos;s
+            success. <br />
+            Let&apos;s collaborate for mutual growth.
           </p>
           <div className="text-base sm:text-lg lg:text-xl px-5 font-base">
             <div className="">

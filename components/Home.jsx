@@ -42,7 +42,7 @@ const Home = () => {
             style={styles.title}
             className="font-semibold text-2xl sm:text-lg lg:text-5xl"
           >
-            Hello, <br /> I'm Shamsad Alam
+            Hello, <br /> I&apos;m Shamsad Alam
           </h1>
 
           <div className="text-gray-300 text-basic sm:text-lg lg:text-3xl">
