@@ -287,7 +287,6 @@ const Projects = () => {
                     target="_sham"
                     className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
                   >
-                    <span className="hidden md:block">Github Link</span>
                     <GitHubIcon
                       className="block md:hidden cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
                       fontSize="large"
@@ -298,7 +297,6 @@ const Projects = () => {
                     target="_sham"
                     className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
                   >
-                    <span className="hidden md:block">Live Link</span>
                     <LanguageIcon
                       className="block md:hidden cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
                       fontSize="large"
@@ -325,7 +323,6 @@ const Projects = () => {
                     target="_sham"
                     className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
                   >
-                    <span className="hidden md:block">Github Link</span>
                     <GitHubIcon
                       className="block md:hidden cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
                       fontSize="large"
@@ -336,7 +333,6 @@ const Projects = () => {
                     target="_sham"
                     className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
                   >
-                    <span className="hidden md:block">Live Link</span>
                     <LanguageIcon
                       className="block md:hidden cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
                       fontSize="large"
