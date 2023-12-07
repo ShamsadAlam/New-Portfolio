@@ -58,7 +58,7 @@ const Home = () => {
               </button>
             </a>
             <a
-              href="https://drive.google.com/file/d/1w-WnVM2kVqJK9VQVKNnrZSb56zKBDdZp/view"
+              href="https://drive.google.com/file/d/1sgZPURW0PN96KBUA0N_BGLvefuUFjVT2/view?usp=sharing"
               target="_sham"
             >
               <button className="border p-3 rounded-3xl px-10 text-white hover:bg-[#FF5E69] hover:text-white hover:border-[#FF5E69]">
