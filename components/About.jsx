@@ -22,7 +22,7 @@ const About = () => {
     <Fade>
       <div
         id="about"
-        className="flex flex-col justify-evenly sm:flex-row lg:flex-row m-4 sm:m-8 lg:m-12 h-screen border"
+        className="flex flex-col justify-evenly sm:flex-row lg:flex-row m-4 sm:m-8 lg:m-12 h-screen"
       >
         {/* EDUCATION */}
         <div style={styles.title} className=" m-4 sm:m-8 lg:m-12">
@@ -76,7 +76,7 @@ const About = () => {
         </div>
 
         {/* WORK EXPERIENCE */}
-        <div style={styles.title} className="m-4 sm:m-8 lg:m-12">
+        <div style={styles.title} className="m-4 sm:m-8 lg:m-12 mb-8">
           <h1 className="text-2xl sm:text-lg lg:text-5xl font-semibold grid place-items-center sm:px-5 lg:px-5">
             Work Experience
           </h1>
