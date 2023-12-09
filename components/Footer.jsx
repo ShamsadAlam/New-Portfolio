@@ -91,10 +91,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="text-gray-300">
-            <a
-              href="https://www.instagram.com/mr._shamsad_alam/"
-              target="_sham"
-            >
+            <a href="https://www.facebook.com/Shamsad7084" target="_sham">
               <FacebookIcon
                 className="cursor-pointer hover:text-[#FFA84B] hover:animate-shake"
                 fontSize="large"
