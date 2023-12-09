@@ -22,7 +22,7 @@ const About = () => {
     <Fade>
       <div
         id="about"
-        className="flex flex-col justify-between sm:flex-row lg:flex-row m-4 sm:m-8 lg:m-12 h-screen"
+        className="flex flex-col justify-evenly sm:flex-row lg:flex-row m-4 sm:m-8 lg:m-12 h-screen border"
       >
         {/* EDUCATION */}
         <div style={styles.title} className=" m-4 sm:m-8 lg:m-12">

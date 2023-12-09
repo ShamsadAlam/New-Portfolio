@@ -29,7 +29,7 @@ const Projects = () => {
       <div id="projects" className="m-4 sm:m-8 lg:m-12 relative">
         <div
           style={styles.title}
-          className="lg:py-5 lg:place-items-start text-2xl sm:text-lg lg:text-5xl mt-6 sm:mt-4 lg:mt-2"
+          className="lg:py-5 lg:place-items-start text-2xl sm:text-lg lg:text-5xl"
         >
           <h1 className="font-semibold text-center lg:text-start">
             <span className="text-white">Look At My</span> Projects.
