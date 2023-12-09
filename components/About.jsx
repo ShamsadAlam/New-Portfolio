@@ -1,6 +1,5 @@
 import React from "react";
-import Reveal from "react-awesome-reveal";
-import { keyframes } from "@emotion/react";
+import { Fade } from "react-awesome-reveal";
 
 const About = () => {
   const styles = {
@@ -11,6 +10,7 @@ const About = () => {
       "-webkit-background-clip": "text",
       color: "transparent",
       "text-fill-color": "transparent",
+      "margin-top": "10vh",
     },
     hr: {
       "margin-top": "10px",
@@ -18,22 +18,11 @@ const About = () => {
       opacity: 0.4,
     },
   };
-  const customAnimation = keyframes`
-  from {
-    opacity: 0;
-    transform: translate3d(2%, 2%, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-`;
   return (
-    <Reveal keyframes={customAnimation}>
+    <Fade>
       <div
         id="about"
-        className="flex flex-col justify-between sm:flex-row lg:flex-row m-4 sm:m-8 lg:m-12 h-screen/2"
+        className="flex flex-col justify-between sm:flex-row lg:flex-row m-4 sm:m-8 lg:m-12 h-screen"
       >
         {/* EDUCATION */}
         <div style={styles.title} className=" m-4 sm:m-8 lg:m-12">
@@ -105,7 +94,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </Reveal>
+    </Fade>
   );
 };
 

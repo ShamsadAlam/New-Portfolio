@@ -3,8 +3,7 @@ import MailIcon from "@mui/icons-material/Mail";
 import PhoneIcon from "@mui/icons-material/Phone";
 import HomeIcon from "@mui/icons-material/Home";
 import emailjs from "emailjs-com";
-import Reveal from "react-awesome-reveal";
-import { keyframes } from "@emotion/react";
+import { Fade } from "react-awesome-reveal";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -47,6 +46,7 @@ const Contact = () => {
       WebkitBackgroundClip: "text",
       color: "transparent",
       textFillColor: "transparent",
+      "margin-top": "10vh",
     },
     button: {
       backgroundImage:
@@ -54,20 +54,8 @@ const Contact = () => {
     },
   };
 
-  const customAnimation = keyframes`
-  from {
-    opacity: 0;
-    transform: translate3d(2%, 2%, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-`;
-
   return (
-    <Reveal keyframes={customAnimation}>
+    <Fade>
       <div
         id="contact-me"
         className="m-4 sm:m-8 lg:m-12 flex flex-col justify-between sm:flex-row lg:flex-row"
@@ -77,8 +65,9 @@ const Contact = () => {
             Contact Me.
           </h1>
           <p className="text-gray-300 text-base p-5">
-            Looking to hire a dedicated and skilled professional? <br /> Look no
-            further! With a passion for excellence and a proven track record,{" "}
+            Looking to hire a dedicated and skilled professional? Look no
+            further!
+            <br /> With a passion for excellence and a proven track record,{" "}
             <br /> I am the perfect candidate for your team. My expertise,
             commitment, and <br />
             adaptability make me an ideal fit for your organization&apos;s
@@ -114,65 +103,67 @@ const Contact = () => {
           </div>
         </div>
         <div className="m-4 sm:m-8 lg:m-12 lg:w-1/2 text-sm sm:text-lg lg:text-lg">
-          <form onSubmit={sendEmail}>
-            <div className="flex flex-col p-2">
-              <h2>Your Name</h2>
-              <input
-                type="text"
-                name="name"
-                value={name}
-                placeholder="Enter your name"
-                onChange={(e) => setName(e.target.value)}
-                className="p-3 bg-[#1C1C22] rounded-md"
-              />
-            </div>
-            <div className="flex flex-col p-2">
-              <h2>Your Email</h2>
-              <input
-                type="email"
-                name="email"
-                value={email}
-                placeholder="Enter your email"
-                onChange={(e) => setEmail(e.target.value)}
-                className="p-3 bg-[#1C1C22] rounded-md"
-              />
-            </div>
-            <div className="flex flex-col p-2">
-              <h2>Your Phone No.</h2>
-              <input
-                type="text"
-                name="phoneNo"
-                value={phoneNo}
-                placeholder="Enter your Phone No."
-                onChange={(e) => setPhoneNo(e.target.value)}
-                className="p-3 bg-[#1C1C22] rounded-md"
-              />
-            </div>
-            <div className="flex flex-col p-2">
-              <h2>Message</h2>
-              <textarea
-                name="Message"
-                placeholder="Write your message to Shamsad Alam"
-                cols="30"
-                rows="10"
-                value={Message}
-                onChange={(e) => setMessage(e.target.value)}
-                className="p-3 bg-[#1C1C22] rounded-md"
-              />
-            </div>
-            <div>
-              <button
-                style={styles.button}
-                className="w-fit p-3 m-3 px-5 text-sm rounded-3xl "
-                type="submit"
-              >
-                SUBMIT NOW
-              </button>
-            </div>
-          </form>
+          <Fade>
+            <form onSubmit={sendEmail}>
+              <div className="flex flex-col p-2">
+                <h2>Your Name</h2>
+                <input
+                  type="text"
+                  name="name"
+                  value={name}
+                  placeholder="Enter your name"
+                  onChange={(e) => setName(e.target.value)}
+                  className="p-3 bg-[#1C1C22] rounded-md"
+                />
+              </div>
+              <div className="flex flex-col p-2">
+                <h2>Your Email</h2>
+                <input
+                  type="email"
+                  name="email"
+                  value={email}
+                  placeholder="Enter your email"
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="p-3 bg-[#1C1C22] rounded-md"
+                />
+              </div>
+              <div className="flex flex-col p-2">
+                <h2>Your Phone No.</h2>
+                <input
+                  type="text"
+                  name="phoneNo"
+                  value={phoneNo}
+                  placeholder="Enter your Phone No."
+                  onChange={(e) => setPhoneNo(e.target.value)}
+                  className="p-3 bg-[#1C1C22] rounded-md"
+                />
+              </div>
+              <div className="flex flex-col p-2">
+                <h2>Message</h2>
+                <textarea
+                  name="Message"
+                  placeholder="Write your message to Shamsad Alam"
+                  cols="30"
+                  rows="10"
+                  value={Message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  className="p-3 bg-[#1C1C22] rounded-md"
+                />
+              </div>
+              <div>
+                <button
+                  style={styles.button}
+                  className="w-fit p-3 m-3 px-5 text-sm rounded-3xl "
+                  type="submit"
+                >
+                  SUBMIT NOW
+                </button>
+              </div>
+            </form>
+          </Fade>
         </div>
       </div>
-    </Reveal>
+    </Fade>
   );
 };
 
