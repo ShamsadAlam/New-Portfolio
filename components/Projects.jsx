@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import RealImage from "../public/Images/Real-Estate.png";
 import NFTWeb from "../public/Images/NFT-Web.png";
@@ -24,6 +23,71 @@ const Projects = () => {
       "text-fill-color": "transparent",
     },
   };
+
+  const projectsData = [
+    // Web Projects
+    {
+      image: Portfolio,
+      title: "Personal Portfolio Website",
+      githubLink: "https://github.com/your-username/your-portfolio-repo",
+      liveLink: "https://your-portfolio-live-link.com",
+    },
+    {
+      image: RealImage,
+      title: "Real-Estate Responsive Website",
+      githubLink: "https://github.com/your-username/real-estate-repo",
+      liveLink: "https://your-real-estate-live-link.com",
+    },
+    {
+      image: NFTWeb,
+      title: "NFT Marketplace Webpage",
+      githubLink: "https://github.com/your-username/nft-webpage-repo",
+      liveLink: "https://your-nft-webpage-live-link.com",
+    },
+    {
+      image: MessengerWeb,
+      title: "Cross-Platform Messenger Website",
+      githubLink: "https://github.com/your-username/messenger-website-repo",
+      liveLink: "https://your-messenger-website-live-link.com",
+    },
+    {
+      image: Netflix,
+      title: "Netflix-Clone Movie Webpage",
+      githubLink: "https://github.com/your-username/messenger-website-repo",
+      liveLink: "https://your-messenger-website-live-link.com",
+    },
+    {
+      image: Restaurant,
+      title: "Restaurant Menu WebApp",
+      githubLink: "https://github.com/your-username/messenger-website-repo",
+      liveLink: "https://your-messenger-website-live-link.com",
+    },
+    {
+      image: Keep,
+      title: "Noble-Keep WebApp",
+      githubLink: "https://github.com/your-username/messenger-website-repo",
+      liveLink: "https://your-messenger-website-live-link.com",
+    },
+
+    // Mobile Projects
+    {
+      image: NFTApp,
+      title: 'React Native App "Pronef" - An NFT Marketplace',
+      githubLink: "https://github.com/your-username/nft-app-repo",
+      liveLink: "https://your-nft-app-live-link.com",
+      width: 170,
+      height: 170,
+    },
+    {
+      image: MessengerApp,
+      title: 'React Native App "Messenger" - A Chat Application',
+      githubLink: "https://github.com/your-username/messenger-app-repo",
+      liveLink: "https://your-messenger-app-live-link.com",
+      width: 185,
+      height: 185,
+    },
+  ];
+
   return (
     <Fade>
       <div id="projects" className="m-4 sm:m-8 lg:m-12 relative">
@@ -43,213 +107,47 @@ const Projects = () => {
           </div>
           {/* Web Projects */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:gird-cols-2 lg:grid-cols-3 gap-8 m-4 sm:m-8 lg:m-12">
-            <div className="bg-[#1C1C22] rounded-xl overflow-hidden hover:scale-105 ease-in-out duration-1000 overflow-hidden">
-              <Image
-                src={Portfolio}
-                width="auto"
-                height="auto"
-                alt="image"
-                className="p-5"
-              />
-              <div className="bg-[#1C1C22] p-5">
-                <p className="text-xl font-semibold ">
-                  Personal Portfolio Website
-                </p>
-                <div className="flex gap-5">
-                  <a
-                    href="https://github.com/ShamsadAlam/New-Portfolio"
-                    target="_sham"
-                    className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
+            <Slide direction="up" duration={1500}>
+              {projectsData
+                .filter((project) => !project.width && !project.height)
+                .map((project, index) => (
+                  <div
+                    key={index}
+                    className="bg-[#1C1C22] rounded-xl overflow-hidden hover:scale-105 ease-in-out duration-1000 overflow-hidden"
                   >
-                    Github Link
-                  </a>
-                  <a
-                    href=""
-                    target="_sham"
-                    className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
-                  >
-                    Live Link
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[#1C1C22] rounded-xl overflow-hidden shadow-lg hover:scale-105 ease-in-out duration-1000 overflow-hidden">
-              <Image
-                src={RealImage}
-                width="auto"
-                height="auto"
-                alt="image"
-                className="p-5"
-              />
-              <div className="bg-[#1C1C22] p-5">
-                <p className="text-xl font-semibold ">
-                  Real-Estate Responsive Website
-                </p>
-                <div className="flex gap-5">
-                  <a
-                    href="https://github.com/ShamsadAlam/Real-Estate-Project"
-                    target="_sham"
-                    className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
-                  >
-                    Github Link
-                  </a>
-                  <a
-                    href="https://real-estate-shamsad.vercel.app/"
-                    target="_sham"
-                    className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
-                  >
-                    Live Link
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[#1C1C22] overflow-hidden rounded-xl shadow-lg hover:scale-105 ease-in-out duration-1000 overflow-hidden">
-              <Image
-                src={NFTWeb}
-                width="auto"
-                height="auto"
-                alt="image"
-                className="p-5"
-              />
-              <div className="bg-[#1C1C22] p-5">
-                <p className="text-xl font-semibold ">
-                  NFT Marketplace Webpage
-                </p>
-                <div className="flex gap-5">
-                  <a
-                    href="https://github.com/ShamsadAlam/NFT-Webpage"
-                    target="_sham"
-                    className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
-                  >
-                    Github Link
-                  </a>
-                  <a
-                    href="https://nft-marketplace-shamsad.vercel.app/"
-                    target="_sham"
-                    className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
-                  >
-                    Live Link
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[#1C1C22] overflow-hidden rounded-xl shadow-lg hover:scale-105 ease-in-out duration-1000 overflow-hidden">
-              <Image
-                src={MessengerWeb}
-                width="auto"
-                height="auto"
-                alt="image"
-                className="p-5"
-              />
-              <div className="bg-[#1C1C22] p-5">
-                <p className="text-xl font-semibold mt-1">
-                  Cross-Platform Messenger Website
-                </p>
-                <div className="flex gap-5">
-                  <a
-                    href="https://github.com/ShamsadAlam/Signal-Clone"
-                    target="_sham"
-                    className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
-                  >
-                    Github Link
-                  </a>
-                  <a
-                    href="https://signal-clone-7571.web.app/"
-                    target="_sham"
-                    className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
-                  >
-                    Live Link
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className=" bg-[#1C1C22] overflow-hidden rounded-xl shadow-lg hover:scale-105 ease-in-out duration-1000 overflow-hidden">
-              <Image
-                src={Netflix}
-                width="auto"
-                height="auto"
-                alt="image"
-                className="p-5"
-              />
-              <div className="bg-[#1C1C22] p-5">
-                <p className="text-xl font-semibold ">
-                  Netflix-Clone Movie Webpage
-                </p>
-                <div className="flex gap-5">
-                  <a
-                    href="https://github.com/ShamsadAlam/Netflix-clone"
-                    target="_sham"
-                    className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
-                  >
-                    Github Link
-                  </a>
-                  <a
-                    href="https://netflix-clone-shamsadalam.vercel.app/"
-                    target="_sham"
-                    className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
-                  >
-                    Live Link
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[#1C1C22] overflow-hidden rounded-xl shadow-lg hover:scale-105 ease-in-out duration-1000 overflow-hidden">
-              <Image
-                src={Restaurant}
-                width="auto"
-                height="auto"
-                alt="image"
-                className="p-5"
-              />
-              <div className="bg-[#1C1C22] p-5">
-                <p className="text-xl font-semibold ">Restaurant Menu WebApp</p>
-                <div className="flex gap-5">
-                  <a
-                    href="https://github.com/ShamsadAlam/restaurent-app"
-                    target="_sham"
-                    className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
-                  >
-                    Github Link
-                  </a>
-                  <a
-                    href="https://restaurent-app-one.vercel.app/"
-                    target="_sham"
-                    className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
-                  >
-                    Live Link
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[#1C1C22] overflow-hidden rounded-xl shadow-lg hover:scale-105 ease-in-out duration-1000 overflow-hidden">
-              <Image
-                src={Keep}
-                width="auto"
-                height="auto"
-                alt="image"
-                className="p-5"
-              />
-              <div className="bg-[#1C1C22] p-5">
-                <p className="text-xl font-semibold ">Noble-Keep WebApp</p>
-                <div className="flex gap-5">
-                  <a
-                    href="https://github.com/ShamsadAlam/Noble-Keep"
-                    target="_sham"
-                    className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
-                  >
-                    Github Link
-                  </a>
-                  <a
-                    href="https://noble-keep.vercel.app/"
-                    target="_sham"
-                    className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
-                  >
-                    Live Link
-                  </a>
-                </div>
-              </div>
-            </div>
+                    <Image
+                      src={project.image}
+                      width="auto"
+                      height="auto"
+                      alt="image"
+                      className="p-5"
+                    />
+                    <div className="bg-[#1C1C22] p-5">
+                      <p className="text-xl font-semibold ">{project.title}</p>
+                      <div className="flex gap-5">
+                        <a
+                          href={project.githubLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
+                        >
+                          Github Link
+                        </a>
+                        <a
+                          href={project.liveLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
+                        >
+                          Live Link
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+            </Slide>
           </div>
+
           {/* Mobile Projects */}
           <div className="grid place-items-center m-4 sm:m-8 lg:m-12">
             <div style={styles.title}>
@@ -258,80 +156,51 @@ const Projects = () => {
               </h1>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 py-6">
-              <div className="flex bg-[#1C1C22] rounded-xl overflow-hidden hover:scale-105 ease-in-out duration-1000 overflow-hidden">
-                <Image
-                  src={NFTApp}
-                  width={170}
-                  height={170}
-                  alt="image"
-                  className="rounded-xl object-contain"
-                />
-                <div className="mx-5 self-center text-sm sm:text-sm lg:text-xl">
-                  <p className="font-semibold">
-                    NFT Marketplace React Native Application <br /> (Both iOS &
-                    Android)
-                  </p>
-                  <div className="flex justify-around p-3 mt-5">
-                    <a
-                      href="https://github.com/ShamsadAlam/NFTMarketPlace"
-                      target="_sham"
-                      className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
+              <Slide direction="up" duration={1500}>
+                {projectsData
+                  .filter((project) => project.width && project.height)
+                  .map((project, index) => (
+                    <div
+                      key={index}
+                      className="flex bg-[#1C1C22] rounded-xl overflow-hidden hover:scale-105 ease-in-out duration-1000 overflow-hidden"
                     >
-                      <GitHubIcon
-                        className="block md:hidden cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
-                        fontSize="large"
+                      <Image
+                        src={project.image}
+                        width={project.width}
+                        height={project.height}
+                        alt="image"
+                        className="rounded-xl object-contain"
                       />
-                    </a>
-                    <a
-                      href="https://expo.dev/@shamsadalam/NFTMarketplace"
-                      target="_sham"
-                      className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
-                    >
-                      <LanguageIcon
-                        className="block md:hidden cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
-                        fontSize="large"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="flex bg-[#1C1C22] rounded-xl overflow-hidden hover:scale-105 ease-in-out duration-1000 overflow-hidden">
-                <Image
-                  src={MessengerApp}
-                  width={185}
-                  height={185}
-                  alt="image"
-                  className="rounded-xl object-contain"
-                />
-                <div className="mx-5 self-center text-sm sm:text-sm lg:text-xl">
-                  <p className="font-semibold">
-                    Messenger React Native Application <br /> (Both iOS &
-                    Android)
-                  </p>
-                  <div className="flex justify-around p-3 mt-5">
-                    <a
-                      href="https://github.com/ShamsadAlam/Signal-Clone"
-                      target="_sham"
-                      className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
-                    >
-                      <GitHubIcon
-                        className="block md:hidden cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
-                        fontSize="large"
-                      />
-                    </a>
-                    <a
-                      href="https://expo.dev/@nobleperson/signal-clone?serviceType=classic&distribution=expo-go"
-                      target="_sham"
-                      className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
-                    >
-                      <LanguageIcon
-                        className="block md:hidden cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
-                        fontSize="large"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
+                      <div className="mx-5 self-center text-sm sm:text-sm lg:text-xl">
+                        <p className="font-semibold">{project.title}</p>
+                        <div className="flex justify-around p-3 mt-5">
+                          <a
+                            href={project.githubLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
+                          >
+                            <GitHubIcon
+                              className="cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
+                              fontSize="large"
+                            />
+                          </a>
+                          <a
+                            href={project.liveLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-300 text-sm cursor-pointer hover:text-[#FF5E69]"
+                          >
+                            <LanguageIcon
+                              className="cursor-pointer hover:text-[#FF5E69] hover:animate-shake"
+                              fontSize="large"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+              </Slide>
             </div>
           </div>
         </Fade>

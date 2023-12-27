@@ -19,9 +19,92 @@ import Github from "../public/SVGIcons/github.svg";
 import Reactnative from "../public/SVGIcons/react-native.svg";
 import Android from "../public/SVGIcons/android.svg";
 import Ios from "../public/SVGIcons/ios.svg";
+import Postman from "../public/SVGIcons/postman.svg";
 import { Slide, Fade } from "react-awesome-reveal";
 
 const Skills = () => {
+  const arr = [
+    {
+      logo: Html,
+      title: "Html5",
+    },
+    {
+      logo: Css,
+      title: "CSS3",
+    },
+    {
+      logo: Javascript,
+      title: "JavaScript",
+    },
+    {
+      logo: Typescript,
+      title: "TypeScript",
+    },
+    {
+      logo: REACT,
+      title: "React.js",
+    },
+    {
+      logo: Next,
+      title: "Next.js",
+    },
+    {
+      logo: Tailwind,
+      title: "Tailwind CSS",
+    },
+    {
+      logo: MaterialUI,
+      title: "Material UI",
+    },
+    {
+      logo: Node,
+      title: "Node.js",
+    },
+    {
+      logo: Express,
+      title: "Express.js",
+    },
+    {
+      logo: Nest,
+      title: "Nest.js",
+    },
+    {
+      logo: MongoDB,
+      title: "MongoDB",
+    },
+    {
+      logo: SQL,
+      title: "SQL",
+    },
+    {
+      logo: MySQL,
+      title: "MySQL",
+    },
+    {
+      logo: Git,
+      title: "Git",
+    },
+    {
+      logo: Github,
+      title: "Github",
+    },
+    {
+      logo: Reactnative,
+      title: "React Native",
+    },
+    {
+      logo: Android,
+      title: "Android",
+    },
+    {
+      logo: Ios,
+      title: "iOS",
+    },
+    {
+      logo: Postman,
+      title: "Postman",
+    },
+  ];
   const styles = {
     title: {
       "background-image":
@@ -42,162 +125,26 @@ const Skills = () => {
         <div style={styles.title}>
           <h1 className="font-semibold px-5 mx-20">Skills.</h1>
         </div>
+
         <div className="grid grid-cols-2 sm:grid-cols-3 md:gird-cols-4 lg:grid-cols-6">
           <Fade>
-            <div className="pt-3 bg-gradient-to-t from-[#2e2d2d] via-[#353536] to-[#414040] overflow-hidden border border-gray-500 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-1000 hover:scale-105 ease-in-out duration-1000">
-              <Image src={Html} height={80} width={80} alt="html" />
-              <div className="w-full p-3 text-center">
-                <h2 className="text-sm sm:text-lg lg:text-xl">Html5</h2>
-              </div>
-            </div>
-            <div className="pt-3 bg-gradient-to-t from-[#2e2d2d] via-[#353536] to-[#414040] overflow-hidden border border-gray-500 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-1000 hover:scale-105 ease-in-out duration-1000">
-              <Image src={Css} height={80} width={80} alt="css" />
-              <div className="w-full p-3 text-center">
-                <h2 className="text-sm sm:text-lg lg:text-xl">CSS3</h2>
-              </div>
-            </div>
-            <div className="pt-3 bg-gradient-to-t from-[#2e2d2d] via-[#353536] to-[#414040] overflow-hidden border border-gray-500 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-1000 hover:scale-105 ease-in-out duration-1000">
-              <Image
-                src={Javascript}
-                height={80}
-                width={80}
-                alt="javascript"
-                className="mt-2"
-              />
-              <div className="w-full p-3 text-center">
-                <h2 className="text-sm sm:text-lg lg:text-xl">JavaScript</h2>
-              </div>
-            </div>
-            <div className="pt-3 bg-gradient-to-t from-[#2e2d2d] via-[#353536] to-[#414040] overflow-hidden border border-gray-500 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-1000 hover:scale-105 ease-in-out duration-1000">
-              <Image src={Typescript} height={80} width={80} alt="typescript" />
-              <div className="w-full p-3 text-center">
-                <h2 className="text-sm sm:text-lg lg:text-xl">TypeScript</h2>
-              </div>
-            </div>
-            <div className="pt-3 bg-gradient-to-t from-[#2e2d2d] via-[#353536] to-[#414040] overflow-hidden border border-gray-500 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-1000 hover:scale-105 ease-in-out duration-1000">
-              <Image src={REACT} height={80} width={80} alt="React" />
-              <div className="w-full p-3 text-center">
-                <h2 className="text-sm sm:text-lg lg:text-xl">React.js</h2>
-              </div>
-            </div>
-            <div className="pt-3 bg-gradient-to-t from-[#2e2d2d] via-[#353536] to-[#414040] overflow-hidden border border-gray-500 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-1000 hover:scale-105 ease-in-out duration-1000">
-              <Image
-                src={Next}
-                height={80}
-                width={80}
-                alt="Next"
-                className="mt-2"
-              />
-              <div className="w-full p-3 text-center">
-                <h2 className="text-sm sm:text-lg lg:text-xl">Next.js</h2>
-              </div>
-            </div>
-            <div className="pt-3 bg-gradient-to-t from-[#2e2d2d] via-[#353536] to-[#414040] overflow-hidden border border-gray-500 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-1000 hover:scale-105 ease-in-out duration-1000">
-              <Image src={Tailwind} height={80} width={80} alt="TailwindCSS" />
-              <div className="w-full p-3 text-center">
-                <h2 className="text-sm sm:text-lg lg:text-xl">Tailwind CSS</h2>
-              </div>
-            </div>
-            <div className="pt-3 bg-gradient-to-t from-[#2e2d2d] via-[#353536] to-[#414040] overflow-hidden border border-gray-500 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-1000 hover:scale-105 ease-in-out duration-1000">
-              <Image
-                src={MaterialUI}
-                height={80}
-                width={80}
-                alt="Material-UI"
-              />
-              <div className="w-full p-3 text-center">
-                <h2 className="text-sm sm:text-lg lg:text-xl">Material UI</h2>
-              </div>
-            </div>
-            <div className="pt-3 bg-gradient-to-t from-[#2e2d2d] via-[#353536] to-[#414040] overflow-hidden border border-gray-500 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-1000 hover:scale-105 ease-in-out duration-1000">
-              <Image src={Node} height={80} width={80} alt="Node.js" />
-              <div className="w-full p-3 text-center">
-                <h2 className="text-sm sm:text-lg lg:text-xl">Node.js</h2>
-              </div>
-            </div>
-            <div className="pt-3 bg-gradient-to-t from-[#2e2d2d] via-[#353536] to-[#414040] overflow-hidden border border-gray-500 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-1000 hover:scale-105 ease-in-out duration-1000">
-              <Image src={Express} height={80} width={80} alt="Express" />
-              <div className="w-full p-3 text-center">
-                <h2 className="text-sm sm:text-lg lg:text-xl">Express.js</h2>
-              </div>
-            </div>
-            <div className="pt-3 bg-gradient-to-t from-[#2e2d2d] via-[#353536] to-[#414040] overflow-hidden border border-gray-500 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-1000 hover:scale-105 ease-in-out duration-1000">
-              <Image src={Nest} height={80} width={80} alt="Nest.js" />
-              <div className="w-full p-3 text-center">
-                <h2 className="text-sm sm:text-lg lg:text-xl">Nest.js</h2>
-              </div>
-            </div>
-            <div className="pt-3 bg-gradient-to-t from-[#2e2d2d] via-[#353536] to-[#414040] overflow-hidden border border-gray-500 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-1000 hover:scale-105 ease-in-out duration-1000">
-              <Image
-                src={MongoDB}
-                height={80}
-                width={80}
-                alt="MongoDB"
-                className="mt-2"
-              />
-              <div className="w-full p-3 text-center">
-                <h2 className="text-sm sm:text-lg lg:text-xl">MongoDB</h2>
-              </div>
-            </div>
-            <div className="pt-3 bg-gradient-to-t from-[#2e2d2d] via-[#353536] to-[#414040] overflow-hidden border border-gray-500 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-1000 hover:scale-105 ease-in-out duration-1000">
-              <Image
-                src={SQL}
-                height={80}
-                width={80}
-                alt="SQL"
-                className="mt-2"
-              />
-              <div className="w-full p-3 text-center">
-                <h2 className="text-sm sm:text-lg lg:text-xl">SQL</h2>
-              </div>
-            </div>
-            <div className="pt-3 bg-gradient-to-t from-[#2e2d2d] via-[#353536] to-[#414040] overflow-hidden border border-gray-500 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-1000 hover:scale-105 ease-in-out duration-1000">
-              <Image src={MySQL} height={80} width={80} alt="MySQL" />
-              <div className="w-full p-3 text-center">
-                <h2 className="text-sm sm:text-lg lg:text-xl">MySQL</h2>
-              </div>
-            </div>
-            <div className="pt-3 bg-gradient-to-t from-[#2e2d2d] via-[#353536] to-[#414040] overflow-hidden border border-gray-500 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-1000 hover:scale-105 ease-in-out duration-1000">
-              <Image src={Git} height={80} width={80} alt="Git" />
-              <div className="w-full p-3 text-center">
-                <h2 className="text-xl">Git</h2>
-              </div>
-            </div>
-            <div className="pt-3 bg-gradient-to-t from-[#2e2d2d] via-[#353536] to-[#414040] overflow-hidden border border-gray-500 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-1000 hover:scale-105 ease-in-out duration-1000">
-              <Image
-                src={Github}
-                height={80}
-                width={80}
-                alt="Github"
-                className="mt-2"
-              />
-              <div className="w-full p-3 text-center">
-                <h2 className="text-sm sm:text-lg lg:text-xl">Github</h2>
-              </div>
-            </div>
-            <div className="pt-3 bg-gradient-to-t from-[#2e2d2d] via-[#353536] to-[#414040] overflow-hidden border border-gray-500 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-1000 hover:scale-105 ease-in-out duration-1000">
-              <Image
-                src={Reactnative}
-                height={80}
-                width={80}
-                alt="React-Native"
-              />
-              <div className="w-full p-3 text-center">
-                <h2 className="text-sm sm:text-lg lg:text-xl">React Native</h2>
-              </div>
-            </div>
-            <div className="pt-3 bg-gradient-to-t from-[#2e2d2d] via-[#353536] to-[#414040] overflow-hidden border border-gray-500 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-1000 hover:scale-105 ease-in-out duration-1000">
-              <Image src={Android} height={80} width={80} alt="Android" />
-              <div className="w-full p-3 text-center">
-                <h2 className="text-sm sm:text-lg lg:text-xl">Android</h2>
-              </div>
-            </div>
-            <div className="pt-3 bg-gradient-to-t from-[#2e2d2d] via-[#353536] to-[#414040] border border-gray-500 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-1000 hover:scale-105 ease-in-out duration-1000">
-              <Image src={Ios} height={80} width={80} alt="iOS" />
-              <div className="w-full p-3 text-center">
-                <h2 className="text-sm sm:text-lg lg:text-xl">iOS</h2>
-              </div>
-            </div>
+            {arr.map((item) => (
+              <Slide direction="up" duration={900} key={item.title}>
+                <div className="pt-3 bg-gradient-to-t from-[#2e2d2d] via-[#353536] to-[#414040] overflow-hidden border border-gray-500 border-opacity-20 rounded-xl m-8 flex flex-col justify-center items-center shadow-lg shadow-gray-1000 hover:scale-105 ease-in-out duration-1000">
+                  <Image
+                    src={item.logo}
+                    height={80}
+                    width={80}
+                    alt={item.title}
+                  />
+                  <div className="w-full p-3 text-center">
+                    <h2 className="text-sm sm:text-lg lg:text-xl">
+                      {item.title}
+                    </h2>
+                  </div>
+                </div>
+              </Slide>
+            ))}
           </Fade>
         </div>
       </div>
