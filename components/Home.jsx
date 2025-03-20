@@ -93,7 +93,7 @@ const Home = () => {
               </button>
             </a>
             <a
-              href="https://drive.google.com/file/d/1lyKBbd4tlM2grfIcdIxszIVEqXlO1TiN/view?usp=sharing"
+              href="https://drive.google.com/file/d/1i7GxnveNCxe4T-OAW8kn-NkZ-Jlxz75h/view?usp=sharing"
               target="_sham"
             >
               <button className="border p-3 rounded-3xl px-10 text-white hover:bg-[#FF5E69] hover:text-white hover:border-[#FF5E69]">
