@@ -91,7 +91,7 @@ const Projects = () => {
 
   return (
     <Fade>
-      <div id="projects" className="m-4 sm:m-8 lg:m-12 relative">
+      <div id="projects" className="m-4 sm:m-8 mt-16 lg:m-12 relative">
         <div
           style={styles.title}
           className="lg:py-5 lg:place-items-start text-2xl sm:text-lg lg:text-5xl"
