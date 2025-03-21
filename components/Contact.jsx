@@ -31,6 +31,10 @@ const Contact = () => {
       (result) => {
         console.log("Email sent successfully!", result.text);
         alert("message sent successfully!! 😊");
+        setName("");
+        setEmail("");
+        setPhoneNo("");
+        setMessage("");
       },
       (error) => {
         console.error("Email could not be sent:", error.text);
