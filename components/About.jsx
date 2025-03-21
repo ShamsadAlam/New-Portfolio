@@ -88,7 +88,7 @@ const About = () => {
             </h2>
             <div className="flex flex-row justify-between">
               <p className="text-gray-300 text-sm">Software Engineer Intern</p>
-              <p className="text-gray-300 text-sm">Jan 2023 - Present</p>
+              <p className="text-gray-300 text-sm">Jan 2023 - June 2024</p>
             </div>
             <hr style={styles.hr} />
           </div>
